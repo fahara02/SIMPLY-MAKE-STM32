@@ -9,7 +9,7 @@ STDLIB_DIRS=./std_lib
 DEVICE_DIR=./device_specific
 LINKER_DIR=$(DEVICE_DIR)/linker_script
 
-OBJDIR=./debug
+OBJDIR=debug
 # Compilers definition.
 CROSS_COMPILE = arm-none-eabi-
 CC = $(CROSS_COMPILE)gcc
@@ -137,7 +137,7 @@ $(TARGET).elf: $(OBJS)
 	$(CC) $(OBJS) $(LDFLAGS) -o $(OBJDIR)/$@
 
 $(OBJDIR)/%.o: %.c
-	
+	@mkdir -p $(OBJDIR)
 	@echo "Building" $<
 	$(CC) $(CFLAGS) -MMD -MP -MF"$(@:%.o=%.d)"  -c $< -o $@
 
@@ -172,7 +172,7 @@ burn:
 
 clean:
 	@echo "Cleaning..."
-	@rm -rf $(OBJDIR)/* ./*.o ./*.d
+	@rm -rf $(OBJDIR)/ ./*.o ./*.d
 
 
 files:
