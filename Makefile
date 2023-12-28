@@ -1,9 +1,10 @@
-# Binaries will be generated with this name (.elf, .bin, .hex)
+# BASED ON THE TARGET NAME BINARY FILES WILL BE GENERATED (.elf, .bin, .hex)
 TARGET=template
 
 ST_MCU_FAMILY=STM32F429_439xx
 USE_STD_PERPH ?= 1
 
+# LIST ALL MAIN DIRECTORIES HERE.
 PROJ_APP_DIR=./srcs
 STDLIB_DIRS=./std_lib
 DEVICE_DIR=./device_specific
