@@ -172,7 +172,7 @@ burn:
 
 clean:
 	@echo "Cleaning..."
-	@rm -rf $(OBJDIR)/ ./*.o ./*.d
+	@rm -rf $(OBJDIR)/ 
 
 
 files:
