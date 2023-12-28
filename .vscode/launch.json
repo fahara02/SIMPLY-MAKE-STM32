@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "g:/_0_ARM_ST/_0BARE_METAL_DEVS/FHR_STM32_BAREMETAL/SIMPLY-MAKE-STM32/srcs",
+      "program": "g:/_0_ARM_ST/_0BARE_METAL_DEVS/FHR_STM32_BAREMETAL/SIMPLY-MAKE-STM32/srcs/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

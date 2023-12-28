@@ -4,7 +4,7 @@
 
 
 A STM32 template file with CMSIS ,STM32 standard perpheral library and multi subdirectory type structure. 
-MAKE file will automatically find all includes no need to manually add any includes.
+MAKE file will automatically find all includes no need to manually add any includes.debug file will be automatically created and destroyed.
 
 run with windows wsl after installing GNU arm-none-eabi-gcc on wsl 
 
@@ -44,7 +44,7 @@ cd SIMPLY-MAKE-STM32
 3. Open it on visual studio code
 
 ```bash
-code ..
+code .
 ```
 4. run make on wsl terminal
 
