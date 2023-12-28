@@ -83,14 +83,8 @@ OBJS+= $(addprefix $(OBJDIR)/,$(patsubst %.s,%.o, $(ASSEMBLY_FILES)))
 VPATH = $(ALL_SRC_DIRS)
 
 
-# vpath %.c $(sort $(dir $(SRCS)))
-# vpath %.s $(sort $(dir $(SRCS)))
-
 
 CFLAGS_INC=-I. $(foreach dir, $(ALL_INC_DIRS), $(addprefix -I, $(dir)))
-
-
-
 
 #Compiler  Prepocessor Flas For defines
 DEF_DEVICE=-D$(ST_MCU_FAMILY)
@@ -180,8 +174,6 @@ files:
 	@echo "all srcs directory : $(ALL_SRC_DIRS)"
 	@echo "Assembly directory : $(UNIQUE_DEVICE_ASSMB_DIRS)"
 
-	
-	
 
 
 .PHONY: all build size clean burn debug disass disass-all files
