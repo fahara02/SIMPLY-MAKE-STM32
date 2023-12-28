@@ -101,8 +101,8 @@ TARGET_FLAGS=\
 	-mfloat-abi=$(FPU_CALC)\
 	-$(ARM_INSTR)
 	
-#  -Wall -Wextra -Werror  -Wmissing-include-dirs
-#-MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)"
+
+
 CFLAGS=\
 	-c \
     -std=gnu11 -Wall\
@@ -112,7 +112,7 @@ CFLAGS=\
 	$(CFLAGS_INC)\
 	-T $(LD_SCRIPT)\
 	$(CFLAGS_defines)
-
+#  -Wall -Wextra -Werror  -Wmissing-include-dirs
 LDFLAGS=\
     -W\
 	-T $(LD_SCRIPT)\
