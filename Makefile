@@ -139,7 +139,7 @@ $(TARGET).elf: $(OBJS)
 $(OBJDIR)/%.o: %.c
 	
 	@echo "Building" $<
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -MMD -MP -MF"$(@:%.o=%.d)"  -c $< -o $@
 
 $(OBJDIR)/%.o: %.s
 	@echo "Building" $<
