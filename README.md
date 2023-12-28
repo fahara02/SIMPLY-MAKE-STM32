@@ -4,7 +4,7 @@
 
 
 A STM32 template file with CMSIS ,STM32 standard perpheral library and multi subdirectory type structure. 
-MAKE file will automatically find all includes no need to manually add any includes.debug file will be automatically created and destroyed.
+MAKE file will automatically find all includes no need to manually add any includes.debug folder will be automatically created and inside all binaries will be generated and upon make clean command will be destroyed.
 
 run with windows wsl after installing GNU arm-none-eabi-gcc on wsl 
 
